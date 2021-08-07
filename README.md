@@ -5,7 +5,7 @@ Adaptive Skip-gram (AdaGram) model is a nonparametric extension of famous Skip-g
 ## Dockerfile
 ```
 docker build . -t adagram
-docker run --shm-size=8G -it bash
+docker run --shm-size=8G -it adagram
 ```
 
 ## Installation
