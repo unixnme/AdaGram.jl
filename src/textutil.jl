@@ -117,6 +117,7 @@ function read_words(f::IOStream, start_pos::Int64, end_pos::Int64,
     word = popfirst!(words)
     id = get(dict.word2id, word, -1)
     if id == -1
+      words_read[1] += 1
       continue
     elseif rand() < 1. - sqrt(threshold / (freqs[id] / total_words))
       words_read[1] += 1
