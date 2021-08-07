@@ -13,7 +13,7 @@ docker run --shm-size=8G -it adagram
 AdaGram is not in the julia package repository yet, so it should be installed in the following way:
 ```
 using Pkg
-Pkg.add(PackageSpec(url="https://github.com/sbos/AdaGram.jl.git"))
+Pkg.add(PackageSpec(url="https://github.com/unixnme/AdaGram.jl.git"))
 ```
 
 ## Training a model
