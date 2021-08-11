@@ -1,5 +1,1 @@
-#!/bin/bash
-
-DIR=$( cd "$( dirname "${BASH_SOURCE[0]}" )" && pwd )
-
-$DIR"/run.sh" $DIR"/train.jl" "$@"
+julia train.jl --workers 4 text8 text8.dict text8.bin
