@@ -1,5 +1,5 @@
 using AdaGram
-vm, dict = load_model("text8.bin")
+vm, dict = load_model("1bil.test.bin")
 
 println(expected_pi(vm, dict.word2id["new"]))
 println(nearest_neighbors(vm, dict, "new", 1, 10))
